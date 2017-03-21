@@ -1,58 +1,58 @@
-/* line 40, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 40, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 h1, h1 a {
   font-size: 5rem; }
 
-/* line 43, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 43, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 h2, h2 a {
   font-size: 3rem; }
 
-/* line 46, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 46, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 h3, h3 a {
   font-size: 2rem; }
 
-/* line 49, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 49, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 body {
   font-size: 1.6rem; }
 
-/* line 52, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 52, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 a {
   text-decoration: none;
   font-weight: bold;
   color: #B1A087; }
 
-/* line 60, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 60, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 header a {
   text-decoration: none;
   font-weight: normal;
   color: #000; }
 
-/* line 65, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 65, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 header nav {
   background-color: #EFE9E3;
   padding: 3rem 0;
   margin-top: 10px; }
 
-/* line 70, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 70, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 header ul, header li {
   list-style: none; }
 
-/* line 73, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 73, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 header nav > ul {
   position: relative; }
 
-/* line 76, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 76, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 header nav > ul > li {
   margin: auto;
   position: relative; }
-  /* line 79, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+  /* line 79, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
   header nav > ul > li > a {
     padding: 10px;
     margin: 10px; }
-    /* line 82, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+    /* line 82, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
     header nav > ul > li > a:hover {
       background-color: #dcd0c3; }
 
-/* line 87, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 87, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 header nav > ul > li > ul {
   position: absolute;
   left: -9999px;
@@ -62,16 +62,16 @@ header nav > ul > li > ul {
   min-width: 150px;
   margin-left: -10px;
   top: 30px; }
-  /* line 96, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+  /* line 96, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
   header nav > ul > li > ul a:hover {
     background-color: #dcd0c3; }
 
-/* line 100, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 100, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 header nav > ul > li:hover > ul {
   left: 0;
   opacity: 1; }
 
-/* line 104, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 104, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 header nav > ul > li > ul > li > ul {
   position: absolute;
   left: -9999px;
@@ -79,16 +79,16 @@ header nav > ul > li > ul > li > ul {
   transition: opacity 0.5s;
   background-color: #cab6a2; }
 
-/* line 111, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 111, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 header nav > ul > li > ul > li:hover > ul {
   left: auto;
   opacity: 1; }
 
-/* line 118, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 118, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 .actualites {
   background-color: #B1A087; }
 
-/* line 121, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 121, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 .actu {
   border: 1px solid;
   border-radius: 10px;
@@ -96,43 +96,66 @@ header nav > ul > li > ul > li:hover > ul {
   flex: 1;
   text-align: center;
   margin: 10px; }
-  /* line 126, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+  /* line 126, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
   .actu p:first-of-type {
     font-style: italic;
     font-size: 1.3rem;
     margin-bottom: 10px; }
-  /* line 131, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+  /* line 131, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
   .actu h3 {
     margin-bottom: 10px; }
 
-/* line 135, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 135, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 .actu img {
   max-width: 150px; }
 
-/* line 138, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 138, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 time {
   font-size: 1.3rem;
   font-style: italic; }
 
-/* line 145, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 145, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 section {
   padding: 10px; }
 
-/* line 148, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 148, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 input[type="checkbox"], input[type="radio"] {
   margin-right: 5px; }
 
-/* line 154, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 154, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
+.commentaires {
+  border-top: 1px solid;
+  margin-top: 3rem; }
+  /* line 157, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
+  .commentaires > div:last-of-type > p {
+    font-weight: bold;
+    margin: 3rem 10px 10px 10px; }
+
+/* line 162, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
+legend {
+  font-size: 2rem; }
+
+/* line 165, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
+.com {
+  margin: 3rem 0; }
+  /* line 167, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
+  .com p:first-of-type {
+    font-style: italic; }
+  /* line 170, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
+  .com p:last-of-type {
+    margin-left: 20px; }
+
+/* line 177, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 .rubrique {
   background-color: #958B88;
   padding: 10px;
   margin: 10px 0; }
 
-/* line 157, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 180, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 .rubrique p:last-of-type {
   text-align: center; }
 
-/* line 160, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 183, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 .rubrique a {
   color: #000;
   display: inline-block;
@@ -143,39 +166,39 @@ input[type="checkbox"], input[type="radio"] {
   text-transform: uppercase;
   font-size: 1.3rem; }
 
-/* line 163, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 186, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 .rubrique a:hover {
   border: none;
   background-color: #FFF; }
 
-/* line 169, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 192, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 footer {
   background-color: #B1A087;
   color: #FFF; }
-  /* line 172, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+  /* line 195, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
   footer #arboFooter {
     padding: 3rem 0;
     background-color: #60533f;
     list-style: none; }
-    /* line 176, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+    /* line 199, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
     footer #arboFooter a {
       font-weight: normal; }
-    /* line 179, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+    /* line 202, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
     footer #arboFooter ul {
       list-style: none; }
-  /* line 183, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+  /* line 206, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
   footer #liensFooter {
     text-align: center;
     padding: 3rem 0; }
-    /* line 186, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+    /* line 209, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
     footer #liensFooter a {
       margin: 0 10px; }
-  /* line 190, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+  /* line 213, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
   footer a {
     color: #FFF;
     text-decoration: none; }
 
-/* line 195, C:/Users/Chipolata/Desktop/LCDZ/templateTest/templateTest.scss */
+/* line 218, C:/Users/Chipolata/Desktop/LCDZ/templateGit/templateTest.scss */
 footer nav > ul > li {
   margin: auto; }
 
