@@ -38,10 +38,12 @@ $fontSizePetit:1.3rem;
 // STYLES GENERAUX
 
 h1, h1 a{
-	font-size:$fontSizeTresGrand
+	font-size:$fontSizeTresGrand;
+	color:darken($couleur2,20%);
 }
 h2, h2 a{
-	font-size:$fontSizeGrand
+	font-size:$fontSizeGrand;
+	color:darken($couleur2,40%);
 }
 h3, h3 a{
 	font-size:$fontSizeMoyen
@@ -60,12 +62,18 @@ a{
 header a{
 	text-decoration:none;
 	font-weight:normal;
-	color:#000
+	color:#000;
+	display:inline-block;
+	width:100%;
+	padding:5px 0;
 }
 header nav {
     background-color: $couleur1;
 	padding:$espace 0;
-	margin-top:10px
+	margin-top:10px;
+	li{
+		padding:0 5px;
+	}
 }
 header ul, header li {
     list-style:none
@@ -76,24 +84,20 @@ header nav > ul{
 header nav > ul > li {
     margin:auto;
 	position:relative;
-	&>a{
-		padding:10px;
-		margin:10px;
-		&:hover{
-			background-color:darken($couleur1, 10%)
-		}
+	&:hover{
+		background-color:darken($couleur1, 10%);
 	}
 }
 header nav > ul > li > ul{
     position:absolute;
+	padding:0;
     left:-9999px;
 	opacity:0;
 	transition:opacity 0.5s;
     background-color:$couleur1;
 	min-width:150px;
-	margin-left:-10px;
 	top:30px;
-	a:hover{
+	li:hover{
 		background-color:darken($couleur1, 10%)
 	}
 }
@@ -104,13 +108,37 @@ header nav > ul > li:hover > ul{
 header nav > ul > li > ul > li > ul{
     position:absolute;
     left:-9999px;
+	width:100%;
+	padding:0;
 	opacity:0;
 	transition:opacity 0.5s;
-    background-color: darken($couleur1, 20%);
+    background-color: darken($couleur1, 15%);
 }
 header nav > ul > li > ul > li:hover > ul{
-    left:auto;
+    left:100%;
+	top:0;
 	opacity:1;
+}
+a.parent:after{
+	content:"";
+	width:0; 
+	height:0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #000;
+	position:relative;
+	top:13px; 
+	left:6px
+}
+
+// SLIDER 
+
+.bxslider img{
+	margin:auto;
+}
+.bx-controls-direction{
+	margin:auto;
+	max-width: 960px;
 }
 
 // ACTUS
@@ -129,15 +157,27 @@ header nav > ul > li > ul > li:hover > ul{
 		margin-bottom:10px
 	}
 	h3{
-		margin-bottom:10px
+		margin-bottom:10px;
+		a{
+			color:#000;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
 	}
 }
 .actu img{
     max-width:150px
 }
-time{
+time, .tag a{
 	font-size:$fontSizePetit;
 	font-style:italic
+}
+
+// GALERIE
+
+.galerie img{
+	max-width:200px;
 }
 
 // CONTENU
@@ -146,6 +186,15 @@ section{
 	padding:10px;
 }
 input[type="checkbox"], input[type="radio"]{
+	margin-right:5px
+}
+fieldset{
+	@include bordure;
+	legend{
+		padding:0 5px;
+	}
+}
+label{
 	margin-right:5px
 }
 
@@ -170,6 +219,10 @@ legend{
 	p:last-of-type{
 		margin-left: 20px
 	}
+	.dateCom{
+		font-size:$fontSizePetit;
+		font-style:italic;
+	}
 }
 
 // RUBRIQUE
@@ -180,11 +233,17 @@ legend{
 .rubrique p:last-of-type{
 	text-align: center
 }
-.rubrique a{
+.suite{
 	@include bouton;
 }
-.rubrique a:hover{
+.suite:hover{
 	@include boutonHover;
+}
+.rubrique h3 a{
+	color:#000;
+	&:hover{
+		text-decoration: underline;
+	}
 }
 
 // FOOTER

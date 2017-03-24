@@ -24,3 +24,8 @@ Structure du fichier scss :
 -commentaires
 -rubrique
 -footer
+
+Crédits : 
+Knacss knacss.com
+Fancybox fancybox.net
+Flexslider https://woocommerce.com/flexslider/
