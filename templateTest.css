@@ -1,28 +1,28 @@
-/* line 40, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 39, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 h1, h1 a {
   font-size: 5rem;
-  color: #7f6d53; }
+  color: #d98400; }
 
-/* line 44, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 43, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 h2, h2 a {
   font-size: 3rem;
-  color: #41382b; }
+  color: #bf7500; }
 
-/* line 48, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 47, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 h3, h3 a {
   font-size: 2rem; }
 
-/* line 51, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 50, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 body {
   font-size: 1.6rem; }
 
-/* line 54, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 53, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #B1A087; }
+  color: #f29400; }
 
-/* line 62, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 61, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 header a {
   text-decoration: none;
   font-weight: normal;
@@ -31,52 +31,52 @@ header a {
   width: 100%;
   padding: 5px 0; }
 
-/* line 70, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 69, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 header nav {
-  background-color: #EFE9E3;
+  background-color: #a3ba03;
   padding: 3rem 0;
   margin-top: 10px; }
-  /* line 74, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 73, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   header nav li {
     padding: 0 5px; }
 
-/* line 78, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 77, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 header ul, header li {
   list-style: none; }
 
-/* line 81, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 80, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 header nav > ul {
   position: relative; }
 
-/* line 84, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 83, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 header nav > ul > li {
   margin: auto;
   position: relative;
   z-index: 5; }
-  /* line 88, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 87, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   header nav > ul > li:hover {
-    background-color: #dcd0c3; }
+    background-color: #778802; }
 
-/* line 92, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 91, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 header nav > ul > li > ul {
   position: absolute;
   padding: 0;
   left: -9999px;
   opacity: 0;
   transition: opacity 0.5s;
-  background-color: #EFE9E3;
+  background-color: #a3ba03;
   min-width: 150px;
   top: 30px; }
-  /* line 101, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 100, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   header nav > ul > li > ul li:hover {
-    background-color: #dcd0c3; }
+    background-color: #899c03; }
 
-/* line 105, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 104, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 header nav > ul > li:hover > ul {
   left: 0;
   opacity: 1; }
 
-/* line 109, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 108, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 header nav > ul > li > ul > li > ul {
   position: absolute;
   left: -9999px;
@@ -84,15 +84,15 @@ header nav > ul > li > ul > li > ul {
   padding: 0;
   opacity: 0;
   transition: opacity 0.5s;
-  background-color: #d3c3b2; }
+  background-color: #778802; }
 
-/* line 118, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 117, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 header nav > ul > li > ul > li:hover > ul {
   left: 100%;
   top: 0;
   opacity: 1; }
 
-/* line 123, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 122, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 a.parent:after {
   content: "";
   width: 0;
@@ -104,13 +104,13 @@ a.parent:after {
   top: 13px;
   left: 6px; }
 
-/* line 137, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 136, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .texteSlider {
   max-width: 960px;
   margin: auto;
   text-align: center; }
 
-/* line 142, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 141, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .suiteSlider {
   color: #000;
   display: inline-block;
@@ -121,115 +121,113 @@ a.parent:after {
   text-transform: uppercase;
   font-size: 1.3rem;
   margin-top: 10px; }
-  /* line 145, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 144, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   .suiteSlider:hover {
-    color: #B1A087;
-    border-color: #B1A087; }
+    color: #007492;
+    border-color: #007492; }
 
-/* line 153, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 152, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .actualites {
-  background-color: #B1A087; }
+  background-color: #009dc5; }
 
-/* line 156, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 155, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .actu {
   border: 1px solid;
-  border-radius: 10px;
   padding: 10px;
   flex: 1;
   text-align: center;
   margin: 10px; }
-  /* line 161, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
-  .actu p:first-of-type {
-    font-style: italic;
-    font-size: 1.3rem;
+  /* line 160, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  .actu header {
     margin-bottom: 10px; }
-  /* line 166, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
-  .actu h3 {
-    margin-bottom: 10px; }
-    /* line 168, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
-    .actu h3 a {
-      color: #000; }
-      /* line 170, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
-      .actu h3 a:hover {
+    /* line 162, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+    .actu header a {
+      color: #000;
+      font-size: 2rem; }
+      /* line 165, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+      .actu header a:hover {
         text-decoration: underline; }
 
-/* line 176, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 171, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .actu img {
   max-width: 150px; }
 
-/* line 179, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 174, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 time, .tag a {
   font-size: 1.3rem;
   font-style: italic; }
 
-/* line 186, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 181, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .galerie img {
   max-width: 200px; }
 
-/* line 192, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 187, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .ariane {
   font-size: 1.3rem;
   margin-bottom: 10px; }
 
-/* line 196, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 191, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 section {
   padding: 10px; }
 
-/* line 199, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 194, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 input[type="checkbox"], input[type="radio"] {
   margin-right: 5px; }
 
-/* line 202, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 197, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 fieldset {
   border: 1px solid;
-  border-radius: 10px;
   padding: 10px; }
-  /* line 204, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 199, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   fieldset legend {
     padding: 0 5px; }
 
-/* line 208, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 203, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 label {
   margin-right: 5px; }
 
-/* line 214, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 209, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .commentaires {
   border-top: 1px solid;
   margin-top: 3rem; }
-  /* line 217, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 212, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   .commentaires > div:last-of-type > p {
     font-weight: bold;
     margin: 3rem 10px 10px 10px; }
 
-/* line 222, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 217, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 legend {
   font-size: 2rem; }
 
-/* line 225, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 220, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .com {
   margin: 3rem 0; }
-  /* line 227, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
-  .com p:first-of-type {
-    font-style: italic; }
-  /* line 230, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 222, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   .com p:last-of-type {
     margin-left: 20px; }
-  /* line 233, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 225, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   .com .dateCom {
     font-size: 1.3rem;
     font-style: italic; }
 
-/* line 241, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 233, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .rubrique {
-  background-color: #958B88;
+  background-color: #f29400;
   padding: 10px;
   margin: 10px 0; }
+  /* line 235, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  .rubrique h2, .rubrique h2 a {
+    color: #000;
+    font-size: 2rem; }
+    /* line 238, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+    .rubrique h2:hover, .rubrique h2 a:hover {
+      text-decoration: underline; }
 
-/* line 244, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 243, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .rubrique p:last-of-type {
   text-align: center; }
 
-/* line 247, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 246, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .suite {
   color: #000;
   display: inline-block;
@@ -240,46 +238,46 @@ legend {
   text-transform: uppercase;
   font-size: 1.3rem; }
 
-/* line 250, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 249, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .suite:hover {
   border: none;
   background-color: #FFF; }
 
-/* line 253, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 252, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 .rubrique h3 a {
   color: #000; }
-  /* line 255, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 254, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   .rubrique h3 a:hover {
     text-decoration: underline; }
 
-/* line 262, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 261, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 footer {
-  background-color: #B1A087;
+  background-color: #007492;
   color: #FFF; }
-  /* line 265, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 264, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   footer #arboFooter {
     padding: 3rem 0;
-    background-color: #60533f;
+    background-color: #004b5f;
     list-style: none; }
-    /* line 269, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+    /* line 268, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
     footer #arboFooter a {
       font-weight: normal; }
-    /* line 272, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+    /* line 271, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
     footer #arboFooter ul {
       list-style: none; }
-  /* line 276, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 275, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   footer #liensFooter {
     text-align: center;
     padding: 3rem 0; }
-    /* line 279, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+    /* line 278, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
     footer #liensFooter a {
       margin: 0 10px; }
-  /* line 283, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+  /* line 282, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
   footer a {
     color: #FFF;
     text-decoration: none; }
 
-/* line 288, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
+/* line 287, /Users/nadegehamann/Desktop/templateGit/templateTest.scss */
 footer nav > ul > li {
   margin: auto; }
 

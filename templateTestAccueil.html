@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Template test</title>
-<link rel="stylesheet" href="knacss.min.css" />
+<link rel="stylesheet" href="knacss.css" />
 <link rel="stylesheet" href="templateTest.css" />
 <link  href="js/jquery.fancybox.min.css" rel="stylesheet" />
 <link  href="js/flexslider.css" rel="stylesheet" />
@@ -54,81 +54,47 @@
         </ul>
         </nav>
     </header>
-    <div class="flexslider">
-	  <ul class="slides">
-		<li>
-		  <img src="logoNina.png" />
-		  <div class="texteSlider">
-		      <h3>Logo Nina</h3>
-		      <p>Blabla blabla blabla cms Nina</p>
-		      <p><a class="suiteSlider" href="#">En savoir plus</a></p>
-		  </div>		  
-		</li>
-		<li>
-		  <img src="kiwi.jpg" />
-		  <div class="texteSlider">
-		      <h3>Kiwi</h3>
-		      <p>Blabla blabla blabla lapin trop mignon</p>
-		      <p><a class="suiteSlider" href="#">En savoir plus</a></p>
-		  </div>
-		</li>
-	  </ul>
-	</div>
-    <main class="mw960p">
+    <main>
+        <section class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="logoNina.png" />
+              <div class="texteSlider">
+                  <h3>Logo Nina</h3>
+                  <p>Blabla blabla blabla cms Nina</p>
+                  <p><a class="suiteSlider" href="#">En savoir plus</a></p>
+              </div>		  
+            </li>
+            <li>
+              <img src="kiwi.jpg" />
+              <div class="texteSlider">
+                  <h3>Kiwi</h3>
+                  <p>Blabla blabla blabla lapin trop mignon</p>
+                  <p><a class="suiteSlider" href="#">En savoir plus</a></p>
+              </div>
+            </li>
+          </ul>
+        </section>
         <section class="actualites">
-           <div class="flex-container">
+           <div class="mw960p flex-container">
             <article class="actu">
-                <h3><a href="templateTestPage.html">Page test</a></h3>
-                <p>14 avril 2017</p>
+                <header><p><a href="templateTestPage.html">Page test</a></p>
+                <time>14 avril 2017</time></header>
                 <a href="templateTestPage.html"><img src="logoNina.png"/></a>
                 <p>Lorem Elsass ipsum commodo Oberschaeffolsheim hoplageiss et placerat flammekueche kuglopf amet quam, tchao bissame hopla nüdle eleifend leverwurscht sit tellus Gal. ac sed réchime rucksack Richard Schirmeck ac mamsell Strasbourg id, Pfourtz ! mollis libero. nullam pellentesque Salu bissame semper ftomi!</p>
             </article>
             <article class="actu">
-                <h3><a href="#">Actu 2</a></h3>
-                <p>14 avril 2017</p>
+                <header><p><a href="templateTestPage.html">Actu 2</a></p>
+                <time>14 avril 2017</time></header>
                 <a href="#"><img src="logoNina.png"/></a></a>
                 <p>Lorem Elsass ipsum commodo Oberschaeffolsheim hoplageiss et placerat flammekueche kuglopf amet quam, tchao bissame hopla nüdle eleifend leverwurscht sit tellus Gal. ac sed réchime rucksack Richard Schirmeck ac mamsell Strasbourg id, Pfourtz ! mollis libero. nullam pellentesque Salu bissame semper ftomi!</p>
             </article>
             <article class="actu">
-                <h3><a href="#">Actu 3</a></h3>
-                <p>14 avril 2017</p>
+                <header><p><a href="templateTestPage.html">Actu 3</a></p>
+                <time>14 avril 2017</time></header>
                 <a href="#"><img src="logoNina.png"/></a>
                 <p>Lorem Elsass ipsum commodo Oberschaeffolsheim hoplageiss et placerat flammekueche kuglopf amet quam, tchao bissame hopla nüdle eleifend leverwurscht sit tellus Gal. ac sed réchime rucksack Richard Schirmeck ac mamsell Strasbourg id, Pfourtz ! mollis libero. nullam pellentesque Salu bissame semper ftomi!</p>
             </article>
-            </div>
-        </section>
-        <section>
-            <div class="grid-3 has-gutter-l">
-            <div class="rubrique">
-                <a href="templateTestPage.html"><img src="logoNina.png"/></a>
-                <h3><a href="templateTestPage.html">Page test</a></h3>
-                <p>Lorem Elsass ipsum commodo Oberschaeffolsheim hoplageiss et placerat flammekueche kuglopf amet quam, tchao bissame hopla nüdle eleifend leverwurscht sit tellus Gal. ac sed réchime rucksack Richard Schirmeck ac mamsell Strasbourg id, Pfourtz ! mollis libero. nullam pellentesque Salu bissame semper ftomi!</p>
-                <p><a class="suite" href="templateTestPage.html">Lire la suite</a></p>
-            </div>    	
-            <div class="rubrique">
-                <a href="#"><img src="logoNina.png"/></a>
-                <h3><a href="#">Article 2</a></h3>
-                <p>Lorem Elsass ipsum commodo Oberschaeffolsheim hoplageiss et placerat flammekueche kuglopf amet quam, tchao bissame hopla nüdle eleifend leverwurscht sit tellus Gal. ac sed réchime rucksack Richard Schirmeck ac mamsell Strasbourg id, Pfourtz ! mollis libero. nullam pellentesque Salu bissame semper ftomi!</p>
-                <p><a class="suite" href="#">Lire la suite</a></p>
-            </div>    	
-            <div class="rubrique">
-                <a href="#"><img src="logoNina.png"/></a>
-                <h3><a href="#">Article 3</a></h3>
-                <p>Lorem Elsass ipsum commodo Oberschaeffolsheim hoplageiss et placerat flammekueche kuglopf amet quam, tchao bissame hopla nüdle eleifend leverwurscht sit tellus Gal. ac sed réchime rucksack Richard Schirmeck ac mamsell Strasbourg id, Pfourtz ! mollis libero. nullam pellentesque Salu bissame semper ftomi!</p>
-                <p><a class="suite" href="#">Lire la suite</a></p>
-            </div>
-            <div class="rubrique">
-                <a href="#"><img src="logoNina.png"/></a>
-                <h3><a href="#">Article 4</a></h3>
-                <p>Lorem Elsass ipsum commodo Oberschaeffolsheim hoplageiss et placerat flammekueche kuglopf amet quam, tchao bissame hopla nüdle eleifend leverwurscht sit tellus Gal. ac sed réchime rucksack Richard Schirmeck ac mamsell Strasbourg id, Pfourtz ! mollis libero. nullam pellentesque Salu bissame semper ftomi!</p>
-                <p><a class="suite" href="#">Lire la suite</a></p>
-            </div>
-            <div class="rubrique">
-                <a href="#"><img src="logoNina.png"/></a>
-                <h3><a href="#">Article 5</a></h3>
-                <p>Lorem Elsass ipsum commodo Oberschaeffolsheim hoplageiss et placerat flammekueche kuglopf amet quam, tchao bissame hopla nüdle eleifend leverwurscht sit tellus Gal. ac sed réchime rucksack Richard Schirmeck ac mamsell Strasbourg id, Pfourtz ! mollis libero. nullam pellentesque Salu bissame semper ftomi!</p>
-                <p><a class="suite" href="#">Lire la suite</a></p>
-            </div>
             </div>
         </section>
     </main>

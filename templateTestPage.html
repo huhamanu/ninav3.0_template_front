@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Template test</title>
-<link rel="stylesheet" href="knacss.min.css" />
+<link rel="stylesheet" href="knacss.css" />
 <link rel="stylesheet" href="templateTest.css" />
 <link  href="js/jquery.fancybox.min.css" rel="stylesheet" />
 <script src="js/jquery-3.2.0.min.js"></script>
@@ -75,9 +75,10 @@
                 </fieldset>
 
                 <fieldset>
-                  <legend>Choucroute</legend>
-                  <p><label><input type="checkbox" value="OK" name="condgen" />Ch'ai lu les conditions chénérales du service</label></p>
-                  <p><label><input type="checkbox" value="OK" name="spam" checked="checked" />Ch'autorise l'utilisation de mes coordonnées par la société</label></p>
+                      <legend>Choucroute</legend>
+                      <p><label><input type="checkbox" value="OK" name="condgen" />Ch'ai lu les conditions chénérales du service</label></p>
+                      <p><label><input type="checkbox" value="OK" name="spam" checked="checked" />Ch'autorise l'utilisation de mes coordonnées par la société</label></p>
+                    <p><label for="date">Date :</label><input type="date" name="date"/></p>
                 </fieldset>
                 <p><input type="submit" value="Enfoyer verdami !" /></p>
 
@@ -94,8 +95,7 @@
                 </nav>
             </div>
         </article>
-        <section class="commentaires">
-        	<div>
+        <aside class="commentaires">
         	<form action="destination.php" method="post">
                   <legend>Ajouter un commentaire</legend>
                   <p><label for="pseudo">Pseudo : </label><input type="text" name="pseudo" id="pseudo" /></p>
@@ -103,19 +103,25 @@
                   <p><label>Message :</label><textarea cols="40" rows="5" name="message">Blablabla</textarea></p>
                 <p><input type="submit" value="Enfoyer verdami !" /></p>
             </form>
-            </div>
-            <div>
-				<p>Commentaires (2)</p>
-				<div class="com">
-					<p>Kevindu67 <span class="dateCom">le 14 mars 2017</span></p>
-					<p>Tro tro bi1 se template test je kif</p>
-				</div>
-				<div class="com">
-					<p>Math1999 <span class="dateCom">le 19 mars 2017</span></p>
-					<p>oui tro kool</p>
-            	</div>            
-            </div>
-        </section>
+            
+            <p>Commentaires (2)</p>
+            <article class="com">
+                <header><p>Kevindu67 <span class="dateCom">le 14 mars 2017</span></p>
+                <p>Titre</p>
+                </header>
+                <section>
+                    <p>Tro tro bi1 se template test je kif</p>
+                </section>
+            </article>
+            <article class="com">
+                <header><p>Kevindu67 <span class="dateCom">le 14 mars 2017</span></p>
+                <p>Titre</p>
+                </header>
+                <section>
+                <p>Math1999 <span class="dateCom">le 19 mars 2017</span></p>
+                </section>
+            </article>       
+        </aside>
     </main>
     <footer>
         <nav id="arboFooter">

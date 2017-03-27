@@ -1,6 +1,6 @@
-$couleur1:#EFE9E3;
-$couleur2:#B1A087;
-$couleur3:#958B88;
+$couleur1:#a3ba03;
+$couleur2:#007492;
+$couleur3:#f29400;
 
 $espace:3rem;
 
@@ -17,7 +17,6 @@ $fontSizePetit:1.3rem;
 }
 @mixin bordure{
 	border:1px solid;
-	border-radius:10px;
 	padding:10px
 }
 @mixin bouton{
@@ -39,11 +38,11 @@ $fontSizePetit:1.3rem;
 
 h1, h1 a{
 	font-size:$fontSizeTresGrand;
-	color:darken($couleur2,20%);
+	color:darken($couleur3,5%);
 }
 h2, h2 a{
 	font-size:$fontSizeGrand;
-	color:darken($couleur2,40%);
+	color:darken($couleur3,10%);
 }
 h3, h3 a{
 	font-size:$fontSizeMoyen
@@ -54,7 +53,7 @@ body{
 a{
 	text-decoration: none;
 	font-weight:bold;
-	color:$couleur2
+	color:$couleur3
 }
 
 // HEADER
@@ -99,7 +98,7 @@ header nav > ul > li > ul{
 	min-width:150px;
 	top:30px;
 	li:hover{
-		background-color:darken($couleur1, 10%)
+		background-color:darken($couleur1, 6%)
 	}
 }
 header nav > ul > li:hover > ul{
@@ -113,7 +112,7 @@ header nav > ul > li > ul > li > ul{
 	padding:0;
 	opacity:0;
 	transition:opacity 0.5s;
-    background-color: darken($couleur1, 15%);
+    background-color: darken($couleur1, 10%);
 }
 header nav > ul > li > ul > li:hover > ul{
     left:100%;
@@ -151,22 +150,18 @@ a.parent:after{
 // ACTUS
 
 .actualites{
-    background-color:$couleur2
+    background-color:lighten($couleur2,10%);
 }
 .actu{
 	@include bordure;
     flex:1;
 	text-align:center;
 	margin:10px;
-	p:first-of-type{
-		font-style:italic;
-		font-size:$fontSizePetit;
-		margin-bottom:10px
-	}
-	h3{
+	header{
 		margin-bottom:10px;
 		a{
 			color:#000;
+            font-size:$fontSizeMoyen;
 			&:hover{
 				text-decoration: underline;
 			}
@@ -220,13 +215,10 @@ label{
 	}
 }
 legend{
-	font-size:$fontSizeMoyen
+	font-size:$fontSizeMoyen;
 }
 .com{
 	margin:$espace 0;
-	p:first-of-type{
-		font-style:italic;
-	}
 	p:last-of-type{
 		margin-left: 20px
 	}
@@ -240,6 +232,13 @@ legend{
 
 .rubrique{
 	@include fondRubrique;
+    h2, h2 a{
+        color:#000;
+        font-size:$fontSizeMoyen;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
 .rubrique p:last-of-type{
 	text-align: center
@@ -264,7 +263,7 @@ footer{
     color:#FFF;
     #arboFooter{
         padding:$espace 0;
-        background-color:darken($couleur2, 30%);
+        background-color:darken($couleur2, 10%);
         list-style: none;
 		a{
 			font-weight:normal

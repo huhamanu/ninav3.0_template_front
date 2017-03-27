@@ -39,5 +39,12 @@ Structure du fichier scss :
     <li>footer</li>
 </ul>
 
+Utilisation des couleurs :
+<ul>
+    <li>Couleur 1 : menu principal</li>
+    <li>Couleur 2 : footer</li>
+    <li>Couleur 3 : liens et titres</li>
+</ul>
+
 Crédits : 
 Knacss knacss.com / Fancybox fancybox.net / Flexslider https://woocommerce.com/flexslider/
