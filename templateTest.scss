@@ -84,6 +84,7 @@ header nav > ul{
 header nav > ul > li {
     margin:auto;
 	position:relative;
+    z-index:5;
 	&:hover{
 		background-color:darken($couleur1, 10%);
 	}
@@ -133,12 +134,18 @@ a.parent:after{
 
 // SLIDER 
 
-.bxslider img{
-	margin:auto;
+.texteSlider{
+    max-width:960px;
+    margin:auto;
+    text-align: center;
 }
-.bx-controls-direction{
-	margin:auto;
-	max-width: 960px;
+.suiteSlider{
+    @include bouton;
+    margin-top:10px;
+    &:hover{
+        color:$couleur2;
+        border-color:$couleur2;
+    }
 }
 
 // ACTUS
@@ -182,6 +189,10 @@ time, .tag a{
 
 // CONTENU
 
+.ariane{
+    font-size:$fontSizePetit;
+    margin-bottom: 10px;
+}
 section{
 	padding:10px;
 }

@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Template test</title>
-<link rel="stylesheet" href="knacss.css" />
+<link rel="stylesheet" href="knacss.min.css" />
 <link rel="stylesheet" href="templateTest.css" />
 <link  href="js/jquery.fancybox.min.css" rel="stylesheet" />
 <script src="js/jquery-3.2.0.min.js"></script>
@@ -11,11 +11,11 @@
 <body>
     <header>
         <div class="mw960p" id="logoSite">
-            <a href="templateTestAccueil.html"><img src="logoNina.png"/></a>    
+            <a href="templateTestAccueil.html"><img src="logoNina.png"/></a>
         </div>
         <nav role="navigation">
         <ul class="mw960p flex-container">
-            <li><a href="#">Picon bière</a>
+            <li><a class="parent" href="templateTestRubrique.html">Rubrique Test</a>
                 <ul>
                     <li><a href="templateTestPage.html">Page test</a>
                         <ul>
@@ -45,23 +45,26 @@
         </ul>
         </nav>
     </header>
- 	<section class="mw960p">
-		<div class="galerie">
-			<a data-fancybox="gallery" href="logoNina.png">
-    			<img src="logoNina.png">
-			</a>
-   			<a data-fancybox="gallery" href="kiwi.jpg">
-    			<img src="kiwi.jpg">
-			</a>
-		</div>
-    </section>
+    <main class="mw960p">
+        <section class="ariane">
+            <a href="templateTestAccueil.html">Accueil</a> > <a href="templateTestRubrique.html">Rubrique Test</a> > Galerie
+        </section>
+        <section class="galerie">
+            <a data-fancybox="gallery" href="logoNina.png">
+                <img src="logoNina.png">
+            </a>
+            <a data-fancybox="gallery" href="kiwi.jpg">
+                <img src="kiwi.jpg">
+            </a>
+        </section>
+    </main>
     <footer>
         <nav id="arboFooter">
         <ul class="mw960p flex-container">
-            <li><a href="#">Picon bière</a>
+            <li><a href="#">Rubrique Test</a>
                 <ul>
-                    <li><a href="#">Picon bière</a></li>
-                    <li><a href="#">Melfor</a></li>
+                    <li><a href="#">Page Test</a></li>
+                    <li><a href="#">Galerie</a></li>
                     <li><a href="#">Carola</a></li>
                     <li><a href="#">Flammekueche</a></li>
                     <li><a href="#">Wurscht</a></li>

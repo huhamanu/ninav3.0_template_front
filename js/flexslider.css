@@ -87,10 +87,15 @@ html[xmlns] .flexslider .slides {
   -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
 }
+.flexslider > ul > li{
+  position:static;
+}
 .flexslider .slides {
   zoom: 1;
+  position:relative;
 }
 .flexslider .slides img {
+  display:block;
   height: auto;
   -moz-user-select: none;
 }
