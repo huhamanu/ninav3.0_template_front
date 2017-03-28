@@ -1,13 +1,18 @@
 <html>
 <head>
 <title>Template test</title>
-<link rel="stylesheet" href="knacss.css" />
-<link rel="stylesheet" href="templateTest.css" />
+<link rel="stylesheet" href="css/knacss.css" />
+<link rel="stylesheet" href="css/templateTest.css" />
+<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" />
 <link  href="js/jquery.fancybox.min.css" rel="stylesheet" />
 <link  href="js/flexslider.css" rel="stylesheet" />
 <script src="js/jquery-3.2.0.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
+<script src="js/modernizr-custom.js"></script>
+<script src="js/jquery-ui-1.7.2.custom.min.js"></script>
+<script src="js/verge.js"></script>
+<script src="js/js.js"></script>
 <script type="text/javascript" charset="utf-8">
   $(document).ready(function() {
     $('.flexslider').flexslider();
@@ -23,6 +28,7 @@
             </a>    
         </div>
         <nav role="navigation">
+        <a class="menuBurger" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <ul class="mw960p flex-container">
             <li><a class="parent" href="templateTestRubrique.html">Rubrique Test</a>
                 <ul>
@@ -76,7 +82,7 @@
           </ul>
         </section>
         <section class="actualites">
-           <div class="mw960p flex-container">
+           <div class="mw960p grid-3-small-2">
             <article class="actu">
                 <header><p><a href="templateTestPage.html">Page test</a></p>
                 <time>14 avril 2017</time></header>

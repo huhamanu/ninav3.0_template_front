@@ -66,13 +66,21 @@ header a{
 	width:100%;
 	padding:5px 0;
 }
+a.parent:after{
+	content:"";
+	width:0; 
+	height:0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #000;
+	position:relative;
+	top:13px; 
+	left:6px
+}
 header nav {
     background-color: $couleur1;
 	padding:$espace 0;
 	margin-top:10px;
-	li{
-		padding:0 5px;
-	}
 }
 header ul, header li {
     list-style:none
@@ -84,51 +92,6 @@ header nav > ul > li {
     margin:auto;
 	position:relative;
     z-index:5;
-	&:hover{
-		background-color:darken($couleur1, 10%);
-	}
-}
-header nav > ul > li > ul{
-    position:absolute;
-	padding:0;
-    left:-9999px;
-	opacity:0;
-	transition:opacity 0.5s;
-    background-color:$couleur1;
-	min-width:150px;
-	top:30px;
-	li:hover{
-		background-color:darken($couleur1, 6%)
-	}
-}
-header nav > ul > li:hover > ul{
-    left:0;
-	opacity:1;
-}
-header nav > ul > li > ul > li > ul{
-    position:absolute;
-    left:-9999px;
-	width:100%;
-	padding:0;
-	opacity:0;
-	transition:opacity 0.5s;
-    background-color: darken($couleur1, 10%);
-}
-header nav > ul > li > ul > li:hover > ul{
-    left:100%;
-	top:0;
-	opacity:1;
-}
-a.parent:after{
-	content:"";
-	width:0; 
-	height:0; 
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 5px solid #000;
-	position:relative;
-	top:13px; 
-	left:6px
 }
 
 // SLIDER 
@@ -271,6 +234,9 @@ footer{
         ul{
             list-style:none
         }
+		&>ul{
+			padding:0;
+		}
     }
     #liensFooter{
         text-align: center;
@@ -285,7 +251,85 @@ footer{
     }
 }
 footer nav > ul > li{margin:auto}
-body{
-    color:gold;
-    background:green;
+
+@media (min-width:769px){
+	a.menuBurger{
+		display:none;
+	}
+	header nav li{
+		padding:0 5px;
+	}
+	header nav > ul > li:hover{
+		background-color:darken($couleur1, 10%);
+	}
+	header nav > ul > li > ul{
+    position:absolute;
+	padding:0;
+    left:-9999px;
+	opacity:0;
+	transition:opacity 0.5s;
+    background-color:$couleur1;
+	min-width:150px;
+	top:30px;
+	li:hover{
+		background-color:darken($couleur1, 6%)
+	}
+	}
+	header nav > ul > li:hover > ul{
+		left:0;
+		opacity:1;
+	}
+	header nav > ul > li > ul > li > ul{
+		position:absolute;
+		left:-9999px;
+		width:100%;
+		padding:0;
+		opacity:0;
+		transition:opacity 0.5s;
+		background-color: darken($couleur1, 10%);
+	}
+	header nav > ul > li > ul > li:hover > ul{
+		left:100%;
+		top:0;
+		opacity:1;
+	}
+}
+@media (max-width:768px){
+	header nav > ul.flex-container, a.parent + ul {
+		display:none;
+	}
+	header nav > ul{
+		padding:0;
+		&>li{
+			width:100%;
+			padding:0;
+			&>a{
+				margin-left:5px;
+			}
+			&>ul{
+				background-color: darken($couleur1, 5%);
+				padding:0;
+				&>li>a{
+					margin-left:20px;
+				}
+				&>li>ul{
+					background-color: darken($couleur1, 10%);
+					padding:0;
+					&>li>a{
+						margin-left:40px;
+					}
+				}
+			}
+		}
+	}
+	a.menuBurger{
+		font-size:$fontSizeGrand;
+		text-align: center;
+	}
+	main > section, main > article, main > aside{
+		padding:10px;
+	}
+	#arboFooter{
+		display:none;
+	}
 }
