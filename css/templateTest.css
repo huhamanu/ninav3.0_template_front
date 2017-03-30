@@ -32,7 +32,7 @@ header a {
   padding: 5px 0; }
 
 /* line 69, C:/Users/Chipolata/Desktop/LCDZ/templateGit/css/templateTest.scss */
-a.parent:after {
+li.parent > a:after {
   content: "";
   width: 0;
   height: 0;
