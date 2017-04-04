@@ -32,7 +32,7 @@ header a {
   padding: 5px 0; }
 
 /* line 69, C:/Users/Chipolata/Desktop/LCDZ/templateGit/css/templateTest.scss */
-li.parent > a:after {
+header li.parent > a:after {
   content: "";
   width: 0;
   height: 0;
@@ -199,7 +199,7 @@ legend {
 
 /* line 212, C:/Users/Chipolata/Desktop/LCDZ/templateGit/css/templateTest.scss */
 .suite:hover {
-  border: none;
+  border-color: #FFF;
   background-color: #FFF; }
 
 /* line 215, C:/Users/Chipolata/Desktop/LCDZ/templateGit/css/templateTest.scss */

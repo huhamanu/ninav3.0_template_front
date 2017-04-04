@@ -10,7 +10,7 @@ $(document).ready(function () {
 	var vw = verge.viewportW();
 	$(window).resize(function () {
 		vw = verge.viewportW();
-		if (vw >= 768){
+		if (vw >= 769){
 			$("header nav > ul.flex-container").css("display", "flex");
 		}
 		else{
@@ -20,7 +20,7 @@ $(document).ready(function () {
 	});
 
 	$("li.parent > a").click(function (e) {
-		if (vw <= 768) {
+		if (vw <= 769) {
 			e.preventDefault();
 			$(this).next("ul").slideToggle();
 		}
