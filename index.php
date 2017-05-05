@@ -1,6 +1,10 @@
 <?php
     include "twig.inc.php";
     include "connexionBDD.inc.php";
+    
+    require "class/actu.php";
+
+    setlocale(LC_TIME, 'Fr_fr');
 
     $requeteListeActus = "SELECT * FROM actus";
     $resultatListeActus = $conn->query($requeteListeActus);
@@ -22,98 +26,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <header>
-        <div class="mw960p" id="logoSite">
-           	<a href="index.html">
-            	<img src="logoNina.png"/>
-            </a>    
-        </div>
-        <nav role="navigation">
-        <a class="menuBurger" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        <ul class="mw960p flex-container">
-            <li><a href="rubrique.html">Rubrique Test</a>
-                <ul>
-                    <li><a href="page.html">Page test</a>
-                        <ul>
-                            <li><a href="#">Picon Bière</a></li>
-                            <li><a href="#">Melfor</a></li>
-                            <li><a href="#">Carola</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="#">Carola</a></li>
-                    <li><a href="#">Flammekueche</a></li>
-                    <li><a href="#">Wurscht</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Melfor</a>
-                <ul>
-                    <li><a href="#">Picon bière</a></li>
-                    <li><a href="#">Melfor</a></li>
-                    <li><a href="#">Carola</a></li>
-                    <li><a href="#">Flammekueche</a></li>
-                    <li><a href="#">Wurscht</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Carola</a></li>
-            <li><a href="#">Flammekueche</a></li>
-            <li><a href="#">Wurscht</a></li>
-        </ul>
-        </nav>
-    </header>
     <?php
     
-    if(isset($_GET['p']) && preg_match("/^[a-z0-9]+$/i",$_GET['p'])){ $p=strtolower($_GET['p']); if(file_exists("templates/$p.html")) {   
-        $template = $twig->loadTemplate("$p.html");
-
-        echo $template->render(array(
+    echo $twig->render('header.html', array());
+    
+    if(isset($_GET['p']) && preg_match("/^[a-z0-9]+$/i",$_GET['p'])){ $p=strtolower($_GET['p']); if(file_exists("templates/$p.html")) {  
+        
+        echo $twig->render("$p.html", array(
         'listeActus' => $listeActus
-        )); }
+        ));
 
+    }
     else{ include "templates/404.html"; }
 
     } else{ 
         
-        $template = $twig->loadTemplate('index.html');
-
-        echo $template->render(array()); 
+        echo $twig->render('accueil.html', array(
+        'listeActus' => $listeActus
+        ));
 
     } 
     
+    echo $twig->render('footer.html', array());
+    
     ?>
-    <footer>
-        <nav id="arboFooter">
-        <ul class="mw960p flex-container">
-            <li><a href="rubrique.html">Rubrique Test</a>
-                <ul>
-                    <li><a href="page.html">Page Test</a></li>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="#">Carola</a></li>
-                    <li><a href="#">Flammekueche</a></li>
-                    <li><a href="#">Wurscht</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Melfor</a>
-                <ul>
-                    <li><a href="#">Picon bière</a></li>
-                    <li><a href="#">Melfor</a></li>
-                    <li><a href="#">Carola</a></li>
-                    <li><a href="#">Flammekueche</a></li>
-                    <li><a href="#">Wurscht</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Carola</a></li>
-            <li><a href="#">Flammekueche</a></li>
-            <li><a href="#">Wurscht</a></li>
-        </ul>
-        </nav>
-        <div class="mw960p" id="liensFooter">
-            <a href="#">Plan du site</a>
-            <a href="#">Recherche</a>
-            <a href="#">Mentions légales</a>
-            <div>Super template de test réalisé par Nadège</div>
-        </div>
-    </footer>
     <script src="js/jquery-3.2.0.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.flexslider-min.js"></script>
@@ -128,20 +64,3 @@
 	</script>
 </body>
 </html>
-<?php
-class actu{
-    var $titre;
-    var $lien;
-    var $image;
-    var $dateA;
-    var $texte;
-    
-    function actu($titreActu, $lienActu, $imageActu, $dateActu, $texteActu){
-        $this->titre=$titreActu;
-        $this->lien=$lienActu;
-        $this->image=$imageActu;
-        $this->dateA=$dateActu;
-        $this->texte=$texteActu;
-    }
-}
-?>

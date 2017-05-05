@@ -23,11 +23,11 @@
    <div class="mw960p grid-3-small-2">
    {% for idActu in listeActus %}
     <article class="actu">
-        <header><p><a href="{{ idActu.lien }}">{{ idActu.titre }}</a></p>
-        <time>{{ idActu.dateA }}</time></header>
-        <a href="{{ idActu.lien }}"><img src="{{ idActu.image }}"/></a>
-        <p>{{ idActu.texte }}</p>
-        <p><a class="suite" href="{{ idActu.lien }}">Lire la suite</a></p>
+        <header><p><a href="{{ idActu.getlien() }}">{{ idActu.getTitre() }}</a></p>
+        <time>{{ idActu.getDate() | date ("l j F Y")}}</time></header>
+        <a href="{{ idActu.getLien() }}"><img src="{{ idActu.getImage() }}"/></a>
+        <p>{{ idActu.getTexte() }}</p>
+        <p><a class="suite" href="{{ idActu.getLien() }}">Lire la suite</a></p>
     </article>
     {% endfor %}
     </div>
