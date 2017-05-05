@@ -1,3 +1,16 @@
+<?php
+    include "twig.inc.php";
+    include "connexionBDD.inc.php";
+
+    $requeteListeActus = "SELECT * FROM actus";
+    $resultatListeActus = $conn->query($requeteListeActus);
+
+    $listeActus=array();
+    while($data=mysqli_fetch_array($resultatListeActus)){
+        extract($data);
+        $listeActus[$idActu]= new actu($titreActu, $lienActu, $imageActu, $dateActu, $texteActu);
+    }
+?>
 <html>
 <head>
 <title>Template test</title>
@@ -49,12 +62,21 @@
         </nav>
     </header>
     <?php
+    
+    if(isset($_GET['p']) && preg_match("/^[a-z0-9]+$/i",$_GET['p'])){ $p=strtolower($_GET['p']); if(file_exists("templates/$p.html")) {   
+        $template = $twig->loadTemplate("$p.html");
 
-    if(isset($_GET['p']) && preg_match("/^[a-z0-9]+$/i",$_GET['p'])){ $p=strtolower($_GET['p']); if(file_exists("pages/$p.html")) { include "pages/$p.html"; }
+        echo $template->render(array(
+        'listeActus' => $listeActus
+        )); }
 
-    else{ include "pages/404.html"; }
+    else{ include "templates/404.html"; }
 
-    } else{ include "pages/index.html";
+    } else{ 
+        
+        $template = $twig->loadTemplate('index.html');
+
+        echo $template->render(array()); 
 
     } 
     
@@ -106,3 +128,20 @@
 	</script>
 </body>
 </html>
+<?php
+class actu{
+    var $titre;
+    var $lien;
+    var $image;
+    var $dateA;
+    var $texte;
+    
+    function actu($titreActu, $lienActu, $imageActu, $dateActu, $texteActu){
+        $this->titre=$titreActu;
+        $this->lien=$lienActu;
+        $this->image=$imageActu;
+        $this->dateA=$dateActu;
+        $this->texte=$texteActu;
+    }
+}
+?>
