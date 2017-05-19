@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $user = "root";
-$passwd = "";
+$passwd = "root";
 $base = "templateGit";
 
 $conn = mysqli_connect($host, $user, $passwd, $base);

@@ -1,12 +1,18 @@
 <?php
 class actu{
+    private $idActu;
     private $titre;
     private $lien;
     private $image;
     private $dateA;
     private $texte;
- 
-    public function actu($titreActu, $lienActu, $imageActu, $dateActu, $texteActu){
+     private $conn;
+
+    public function __construct($idActu, $conn){
+        $requeteListeActus = "SELECT * FROM actus WHERE idActu=$idActu";
+        $resultatListeActus = $conn->query($requeteListeActus);
+        $data=mysqli_fetch_array($resultatListeActus);
+        extract($data);
         $this->titre=$titreActu;
         $this->lien=$lienActu;
         $this->image=$imageActu;
