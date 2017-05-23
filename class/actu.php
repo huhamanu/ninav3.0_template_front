@@ -1,23 +1,23 @@
 <?php
 class actu{
-    private $idActu;
+    private $idPage;
     private $titre;
     private $lien;
     private $image;
     private $dateA;
     private $texte;
-     private $conn;
+    private $conn;
 
-    public function __construct($idActu, $conn){
-        $requeteListeActus = "SELECT * FROM actus WHERE idActu=$idActu";
+    public function __construct($idPage, $conn){
+        $requeteListeActus = "SELECT * FROM page WHERE idPage=$idPage";
         $resultatListeActus = $conn->query($requeteListeActus);
         $data=mysqli_fetch_array($resultatListeActus);
         extract($data);
-        $this->titre=$titreActu;
-        $this->lien=$lienActu;
-        $this->image=$imageActu;
-        $this->dateA=$dateActu;
-        $this->texte=$texteActu;
+        $this->titre=$titrePage;
+        $this->lien=$lienPage;
+        $this->image=$imagePage;
+        $this->dateA=$datePage;
+        $this->texte=$textePage;
     }
     
     public function getTitre(){

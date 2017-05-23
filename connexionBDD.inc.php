@@ -2,8 +2,8 @@
 
 $host = "localhost";
 $user = "root";
-$passwd = "root";
-$base = "templateGit";
+$passwd = "";
+$base = "templategit";
 
 $conn = mysqli_connect($host, $user, $passwd, $base);
 

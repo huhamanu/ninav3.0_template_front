@@ -1,17 +1,16 @@
 <?php
     include "twig.inc.php";
     include "connexionBDD.inc.php";
-    ini_set('display_errors', 1);
-    require "class/actu.php";
+    require "class/autoloader.php";
 
-    setlocale(LC_TIME, 'Fr_fr');
+    autoloader::register();
 
-    $requeteListeActus = "SELECT idActu FROM actus";
+    $requeteListeActus = "SELECT idPage FROM pages WHERE typePage='actu'";
     $resultatListeActus = $conn->query($requeteListeActus);
 
     $listeActus=array();
     while($data=mysqli_fetch_array($resultatListeActus)){
-        $listeActus[$data['idActu']]= new actu($data['idActu'], $conn);
+        $listeActus[$data['idPage']]= new actu($data['idPage'], $conn);
     }
     
     echo $twig->render('header.html', array());
